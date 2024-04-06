@@ -1,0 +1,167 @@
+/* // <uniquifier>: Use a unique and descriptive class name */
+/* // <weight>: Use a value from 100 to 900 */
+
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: sans-serif;
+    color: #2a2a2a;
+    font-size: 0.9rem;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4%;
+    align-items: center;
+    height: 75px;
+}
+
+.header-logo {
+    height: 75px;
+}
+
+.logo-img {
+    width: 125px;
+}
+
+.nav-bar {
+    display: block;
+    width: 40%;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-list li {
+    list-style: none;
+}
+
+.nav-list li a {
+    color: #2a2a2a;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.nav-list li a:hover {
+    opacity: 0.7;
+}
+
+.main-png {
+    width: 100%;
+    padding: 0 0 5% 0;
+    background-color: #000000;
+    opacity: 1;
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #000000 10px), repeating-linear-gradient(#000d8055, #000d80);
+}
+
+.main-png ul {
+    display: block;
+    padding: 0 10%;
+}
+
+.main-png ul li {
+    padding: 0 30%;
+    list-style: none;
+}
+
+.wrap {
+    padding: 10% 5% 0 5%;
+    justify-content: space-around;
+}
+
+#about {
+    text-align: left;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+#about h2 {
+    padding: 5% 0;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.about-logo {
+    width: 100px;
+    height: 100px;
+}
+
+.about-content p {
+    display: block;
+    width: 60%;
+}
+
+#language h2 {
+    padding: 5% 0;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.language-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.language-list li {
+    margin-bottom: 5%;
+    width: 31%;
+    list-style: none;
+    /* background-color: aqua; */
+}
+
+.language-list li:first-child {
+    margin-bottom: 30px;
+}
+
+.language-list li img {
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.language-list li img:hover {
+    transform: scale(1.2, 1.2);
+    opacity: 0.7;
+}
+
+.footer {
+    height: 10%;
+    width: 100%;
+}
+
+.footer p {
+    display: block;
+    margin: 5% 0;
+    padding: 0 4%;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-bar {
+        width: 60%;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-logo {
+        margin: 4%;
+    }
+
+    .language-list li {
+        width: 45%;
+    }
+}
